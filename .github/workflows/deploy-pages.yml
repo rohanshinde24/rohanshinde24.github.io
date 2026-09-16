@@ -34,8 +34,8 @@ jobs:
       - name: Build portfolio
         run: npm run build
         env:
-          # Configure this repository variable with a public contact API URL.
-          REACT_APP_API_URL: ${{ vars.REACT_APP_API_URL }}
+          # Formspree endpoints are public and safe to embed in the client build.
+          REACT_APP_FORMSPREE_ENDPOINT: ${{ vars.REACT_APP_FORMSPREE_ENDPOINT }}
       - name: Add single-page app fallback
         run: cp build/index.html build/404.html
       - name: Upload Pages artifact
