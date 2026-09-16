@@ -66,9 +66,9 @@ function App() {
         />
         <meta
           property="og:image"
-          content="https://rohan-dev.vercel.app/images/og-image.jpeg"
+          content="https://rohanshinde24.github.io/images/og-image.jpeg"
         />
-        <meta property="og:url" content="https://rohan-dev.vercel.app" />
+        <meta property="og:url" content="https://rohanshinde24.github.io" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta
@@ -81,7 +81,7 @@ function App() {
         />
         <meta
           name="twitter:image"
-          content="https://rohan-dev.vercel.app/images/og-image.jpeg"
+          content="https://rohanshinde24.github.io/images/og-image.jpeg"
         />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <meta name="theme-color" content="#F7F4EE" />
