@@ -1,0 +1,25 @@
+<svg width="800" height="460" viewBox="0 0 800 460" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Orbit distributed scheduler illustration</title>
+  <desc id="desc">A scheduler leader coordinates leased workers around a durable central database.</desc>
+  <rect width="800" height="460" fill="#EEE8DC"/>
+  <circle cx="400" cy="150" r="74" fill="#25231F"/>
+  <circle cx="400" cy="150" r="55" stroke="#D7CCB8" stroke-width="2"/>
+  <text x="400" y="145" fill="#F8F5EE" font-family="Georgia, serif" font-size="22" font-weight="bold" text-anchor="middle">leader</text>
+  <text x="400" y="171" fill="#D7CCB8" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">etcd term</text>
+  <circle cx="180" cy="105" r="37" fill="#F8F5EE" stroke="#B9A989" stroke-width="2"/>
+  <circle cx="620" cy="105" r="37" fill="#F8F5EE" stroke="#B9A989" stroke-width="2"/>
+  <circle cx="215" cy="242" r="37" fill="#F8F5EE" stroke="#B9A989" stroke-width="2"/>
+  <circle cx="585" cy="242" r="37" fill="#F8F5EE" stroke="#B9A989" stroke-width="2"/>
+  <text x="180" y="111" fill="#25231F" font-family="Arial, sans-serif" font-size="15" font-weight="bold" text-anchor="middle">worker</text>
+  <text x="620" y="111" fill="#25231F" font-family="Arial, sans-serif" font-size="15" font-weight="bold" text-anchor="middle">worker</text>
+  <text x="215" y="248" fill="#25231F" font-family="Arial, sans-serif" font-size="15" font-weight="bold" text-anchor="middle">worker</text>
+  <text x="585" y="248" fill="#25231F" font-family="Arial, sans-serif" font-size="15" font-weight="bold" text-anchor="middle">worker</text>
+  <path d="M216 114L322 137M584 114L478 137M244 220L337 170M556 220L463 170" stroke="#7B715D" stroke-width="3" stroke-linecap="round"/>
+  <rect x="330" y="245" width="140" height="52" rx="7" fill="#B74F32"/>
+  <text x="400" y="277" fill="#FFF9F0" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle">PostgreSQL</text>
+  <path d="M400 224V245" stroke="#7B715D" stroke-width="3" stroke-linecap="round"/>
+  <path d="M400 297V316" stroke="#7B715D" stroke-width="3" stroke-linecap="round"/>
+  <text x="400" y="348" fill="#625C50" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">leases + fencing tokens + durable state</text>
+  <text x="54" y="393" fill="#25231F" font-family="Georgia, serif" font-size="40" font-weight="bold">Orbit</text>
+  <text x="746" y="393" fill="#B74F32" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="end" letter-spacing="2">DISTRIBUTED SCHEDULING</text>
+</svg>

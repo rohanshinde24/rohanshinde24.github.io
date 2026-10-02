@@ -1,0 +1,24 @@
+<svg width="800" height="460" viewBox="0 0 800 460" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">RepoShift migration workflow illustration</title>
+  <desc id="desc">A dependency graph routes repository changes through an isolated test sandbox and durable checkpoint.</desc>
+  <rect width="800" height="460" fill="#EEE8DC"/>
+  <rect x="54" y="64" width="210" height="128" rx="8" fill="#F8F5EE" stroke="#B9A989" stroke-width="2"/>
+  <text x="82" y="105" fill="#25231F" font-family="Georgia, serif" font-size="25" font-weight="bold">plan graph</text>
+  <circle cx="98" cy="142" r="9" fill="#B74F32"/>
+  <circle cx="160" cy="142" r="9" fill="#B74F32"/>
+  <circle cx="222" cy="142" r="9" fill="#B74F32"/>
+  <path d="M107 142H151M169 142H213" stroke="#7B715D" stroke-width="3" stroke-linecap="round"/>
+  <path d="M264 128H356" stroke="#7B715D" stroke-width="3" stroke-linecap="round"/>
+  <path d="M346 119L358 128L346 137" stroke="#7B715D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="370" y="64" width="182" height="128" rx="8" fill="#25231F"/>
+  <text x="400" y="109" fill="#F8F5EE" font-family="Georgia, serif" font-size="23" font-weight="bold">sandbox</text>
+  <text x="400" y="143" fill="#D7CCB8" font-family="Arial, sans-serif" font-size="16">edit + test</text>
+  <path d="M552 128H646" stroke="#7B715D" stroke-width="3" stroke-linecap="round"/>
+  <path d="M636 119L648 128L636 137" stroke="#7B715D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="662" y="64" width="84" height="128" rx="8" fill="#F8F5EE" stroke="#B9A989" stroke-width="2"/>
+  <path d="M687 102H722M687 125H722M687 148H712" stroke="#B74F32" stroke-width="4" stroke-linecap="round"/>
+  <path d="M400 236H694" stroke="#B9A989" stroke-width="2"/>
+  <text x="54" y="293" fill="#B74F32" font-family="Arial, sans-serif" font-size="14" font-weight="bold" letter-spacing="2">FAILURE-AWARE MIGRATIONS</text>
+  <text x="54" y="354" fill="#25231F" font-family="Georgia, serif" font-size="40" font-weight="bold">RepoShift</text>
+  <text x="54" y="388" fill="#625C50" font-family="Arial, sans-serif" font-size="19">Durable tasks. Isolated repair. Verified changes.</text>
+</svg>

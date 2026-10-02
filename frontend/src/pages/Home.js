@@ -23,9 +23,9 @@ const Home = () => {
         </p>
 
         <p className="max-w-3xl mx-auto text-base sm:text-lg leading-relaxed text-center text-muted dark:text-muted-dark mb-10 sm:mb-12">
-          My work spans Java services on AWS, data platforms for university
-          teams, and production ML systems. I focus on clear engineering
-          tradeoffs, measurable performance, and systems people can depend on.
+          My work spans Java services on AWS, event-driven Python systems,
+          distributed workflows, and applied AI. I focus on failure modes,
+          measurable performance, and systems people can depend on.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center w-full sm:w-auto">

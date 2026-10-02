@@ -26,16 +26,17 @@ export default function About() {
         <p>
           I&apos;m a software engineer focused on reliable distributed systems,
           cloud infrastructure, data platforms, and applied AI. I like work
-          where the details matter: making a hard investigation faster,
+          where the details matter, making a hard investigation faster,
           designing a clear boundary between services, or turning an ambiguous
           workflow into something people can trust.
         </p>
         <p>
-          At Amazon&apos;s Fulfill to Promise organization, I built tooling for
-          fulfillment-decision investigations. At USC, I work on search, data,
-          and observability problems for university teams. Across both, I bring
-          the same approach: understand the people using the system, make the
-          technical tradeoffs explicit, and ship something dependable.
+          At Amazon&apos;s Fulfill to Promise team in the Supply Chain
+          Optimization Technologies organization, I built tooling for
+          fulfillment-decision investigations. At USC, I built event-driven
+          agent systems and data services for university teams. Across both, I
+          focus on understanding the people using the system, making the
+          technical tradeoffs explicit, and shipping something dependable.
         </p>
       </motion.div>
 
@@ -160,13 +161,13 @@ export default function About() {
 
                 {gpa && (
                   <p className="text-left text-muted dark:text-muted-dark font-medium mb-3">
-                    GPA: {gpa.toFixed(2)}
+                    GPA {gpa.toFixed(2)}
                   </p>
                 )}
 
                 <p className="text-left text-muted dark:text-muted-dark text-sm sm:text-base">
                   <strong className="text-accent dark:text-accent-dark">
-                    Coursework:
+                    Coursework
                   </strong>{' '}
                   {coursework.join(', ')}
                 </p>

@@ -1,6 +1,7 @@
 export const experienceData = [
   {
-    company: 'Amazon - SCOT, Fulfill to Promise',
+    company:
+      'Amazon, Fulfill to Promise, Supply Chain Optimization Technologies',
     logo: '/assets/logos/amazon.svg',
     location: 'Bellevue, WA',
     role: 'Software Development Engineer Intern',
@@ -14,17 +15,17 @@ export const experienceData = [
     ],
   },
   {
-    company: 'University of Southern California',
+    company: 'University of Southern California - Advancement Services',
     logo: '/assets/logos/usc.svg',
     location: 'Los Angeles, CA',
-    role: 'Software Engineer (Student Worker)',
-    type: 'Part-time (On Campus)',
-    period: 'May 2025 – Present',
+    role: 'Software Engineer Intern',
+    type: 'Internship',
+    period: 'May 2025 – Feb 2026',
     highlights: [
-      'Developed full-stack search solution using React/TypeScript frontend with SharePoint REST API backend, implementing NLP-powered intent detection and similarity scoring algorithms for real-time suggestions',
-      'Engineered automated data pipeline using Python with multi-API integration (Tableau + SharePoint), implementing OAuth authentication and distributed caching for 440+ users across 19 administrative groups',
-      'Built custom monitoring integration between IBM Cognos Analytics and Azure Monitor using REST APIs and Python middleware, reducing monitoring overhead by 40%',
-      'Refactored legacy PostgreSQL pipelines using set-based operations and strategic indexing, reducing runtime by 80%',
+      'Built an event-driven Python service using Microsoft Graph webhooks and SQS to turn calendar changes into cited meeting-prep summaries with Claude and idempotent scheduling.',
+      'Designed a crash-resumable agent runtime with tool calling, per-task adaptive model routing, and identity and sensitivity guardrails, achieving zero wrong-person or prompt-injection leaks across 30 live-model evaluations.',
+      'Reduced p50 latency 10x and cost per request 80% under a 200-meeting load test using versioned TTL caching, prompt caching, Batch API preprocessing, and Redis distributed locking across four service replicas.',
+      'Engineered a Python data pipeline integrating Tableau and SharePoint with OAuth and distributed caching for 440+ users across 19 administrative groups.',
     ],
   },
   {
@@ -35,10 +36,10 @@ export const experienceData = [
     type: 'Internship',
     period: 'Jul 2024 – Oct 2024',
     highlights: [
-      'Optimized a low-latency C++ backend inference service by removing hot-path bottlenecks and improving concurrency, delivering 2x throughput on the same hardware and cutting response time from 500 ms to 250 ms for 95% of requests',
-      'Re-architected BERT-based NLP pipeline with automated training/eval workflows and real-time metrics, boosting classification accuracy to 98% on multi-class intent labels (+17% over baseline)',
-      'Designed a scalable LLM powered hybrid streaming and batch pipeline using vLLM and Groq for synthetic data and labels, enabling concurrent training of domain-specific models across 5+ financial use cases',
-      'Fine-tuned LLaMA 3.1 with QLoRA, improving precision from 0.26 to 0.75 across 35 classes (+190% relative; 2.9×)',
+      'Optimized a low-latency C++ backend inference service by removing hot-path bottlenecks and improving concurrency, doubling throughput and cutting p95 response time from 500 ms to 250 ms.',
+      'Cut synthetic-data generation and labeling turnaround time by 65% by building a hybrid vLLM and Groq pipeline.',
+      'Raised precision from 34% to 98% by fine-tuning Llama 3.1 with QLoRA for 35-class transaction classification.',
+      'Re-architected a BERT-based NLP pipeline for financial classification with automated training and evaluation workflows.',
     ],
   },
   {

@@ -51,18 +51,15 @@ function App() {
   return (
     <Router>
       <Helmet>
-        <title>Rohan Shinde | AI/ML & Full Stack Engineer</title>
+        <title>Rohan Shinde | Software Engineer</title>
         <meta
           name="description"
-          content="Portfolio of Rohan Shinde — AI/ML Engineer and USC CS grad student. Explore full-stack projects, LLM agents, experience, and contact info."
+          content="Software engineer building backend and distributed systems across cloud infrastructure, data, and applied AI."
         />
-        <meta
-          property="og:title"
-          content="Rohan Shinde | AI/ML & Full Stack Engineer"
-        />
+        <meta property="og:title" content="Rohan Shinde | Software Engineer" />
         <meta
           property="og:description"
-          content="Software engineer building reliable cloud, data, and applied AI systems."
+          content="Software engineer building backend and distributed systems across cloud infrastructure, data, and applied AI."
         />
         <meta
           property="og:image"
@@ -71,13 +68,10 @@ function App() {
         <meta property="og:url" content="https://rohanshinde24.github.io" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Rohan Shinde | AI/ML & Full Stack Engineer"
-        />
+        <meta name="twitter:title" content="Rohan Shinde | Software Engineer" />
         <meta
           name="twitter:description"
-          content="Software engineer building reliable cloud, data, and applied AI systems."
+          content="Software engineer building backend and distributed systems across cloud infrastructure, data, and applied AI."
         />
         <meta
           name="twitter:image"

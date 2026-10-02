@@ -1,6 +1,20 @@
-import { motion, AnimatePresence } from 'framer-motion';
+import { useEffect, useRef } from 'react';
+import { AnimatePresence, motion } from 'framer-motion';
 
 export default function ProjectModal({ project, onClose }) {
+  const closeButtonRef = useRef(null);
+
+  useEffect(() => {
+    if (!project) return undefined;
+
+    closeButtonRef.current?.focus();
+    const handleKeyDown = (event) => {
+      if (event.key === 'Escape') onClose();
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [project, onClose]);
+
   return (
     <AnimatePresence>
       {project && (
@@ -10,6 +24,7 @@ export default function ProjectModal({ project, onClose }) {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           onClick={onClose}
+          role="presentation"
         >
           <motion.div
             className="relative w-full max-w-2xl p-5 sm:p-8 bg-surface dark:bg-surface-dark rounded-lg border border-line dark:border-line-dark overflow-y-auto max-h-[90vh]"
@@ -18,19 +33,26 @@ export default function ProjectModal({ project, onClose }) {
             exit={{ scale: 0.8, y: 20 }}
             transition={{ type: 'spring', damping: 25, stiffness: 300 }}
             onClick={(event) => event.stopPropagation()}
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="project-modal-title"
           >
             <button
+              ref={closeButtonRef}
               onClick={onClose}
-              className="absolute top-3 right-4 text-muted hover:text-ink dark:text-muted-dark dark:hover:text-ink-dark text-xl font-bold"
+              className="absolute top-3 right-4 text-muted hover:text-ink dark:text-muted-dark dark:hover:text-ink-dark text-xl font-bold focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent dark:focus-visible:ring-accent-dark"
               aria-label="Close project details"
             >
-              ✕
+              x
             </button>
 
             {/* Header */}
             <div className="mb-6">
               <div className="flex items-center gap-3 mb-3">
-                <h3 className="font-display text-3xl font-semibold text-ink dark:text-ink-dark">
+                <h3
+                  id="project-modal-title"
+                  className="font-display text-3xl font-semibold text-ink dark:text-ink-dark"
+                >
                   {project.name}
                 </h3>
                 <span className="px-3 py-1 text-xs font-medium bg-accent-soft dark:bg-accent-darkSoft text-accent dark:text-accent-dark rounded">
@@ -48,7 +70,7 @@ export default function ProjectModal({ project, onClose }) {
               <div className="mb-6">
                 <img
                   src={project.image}
-                  alt={project.name}
+                  alt=""
                   className="w-full h-48 object-cover rounded-md border border-line dark:border-line-dark"
                 />
               </div>
